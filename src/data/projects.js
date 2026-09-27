@@ -46,7 +46,7 @@ export const projects = [
     ],
 
     liveUrl:
-      "YOUR-BATTLESHIP-LIVE-LINK",
+      "https://l4hmmski.github.io/odin_battleship/",
 
     githubUrl:
       "https://github.com/l4hmmski/odin_battleship",
@@ -70,9 +70,9 @@ export const projects = [
     ],
 
     liveUrl:
-      "YOUR-WEATHER-APP-LIVE-LINK",
+      "https://l4hmmski.github.io/odin_weather_app/",
 
-    githubUrl: "#",
+    githubUrl: "https://github.com/l4hmmski/odin_weather_app",
 
     previewType: "weather",
 
@@ -93,9 +93,9 @@ export const projects = [
     ],
 
     liveUrl:
-      "YOUR-TODO-LIST-LIVE-LINK",
+      "https://l4hmmski.github.io/todo-list/",
 
-    githubUrl: "#",
+    githubUrl: "https://github.com/l4hmmski/todo-list",
 
     previewType: "todo",
 
