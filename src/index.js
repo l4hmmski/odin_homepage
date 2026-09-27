@@ -23,17 +23,24 @@ const currentYear =
     "#current-year"
   );
 
-function displayProjects() {
+function displaySelectedProjects() {
   projectsGrid.textContent = "";
 
-  projects.forEach(function (project) {
-    const projectCard =
-      createProjectCard(project);
+  const selectedProjects =
+    projects.filter(function (project) {
+      return project.featured;
+    });
 
-    projectsGrid.appendChild(
-      projectCard
-    );
-  });
+  selectedProjects.forEach(
+    function (project) {
+      const projectCard =
+        createProjectCard(project);
+
+      projectsGrid.appendChild(
+        projectCard
+      );
+    }
+  );
 }
 
 function setCurrentYear() {
@@ -52,7 +59,7 @@ function setUpMobileNavigation() {
 
       menuButton.setAttribute(
         "aria-expanded",
-        isOpen
+        String(isOpen)
       );
 
       menuButton.textContent =
@@ -81,6 +88,6 @@ function setUpMobileNavigation() {
   );
 }
 
-displayProjects();
+displaySelectedProjects();
 setCurrentYear();
 setUpMobileNavigation();
